@@ -1,0 +1,107 @@
+body{
+font-family: 'Roboto Mono', monospace;
+
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(to right, #ffafbd, #ffc3a0);
+font-size: 30px;
+font-weight: 300;
+}
+
+
+.container{
+    background-color: aliceblue;
+    width: 70%;
+    height: 80%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20 20px 20px 20px;
+
+}
+.display1{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    background-color: #4444449c;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+    overflow-x: auto;    
+
+
+
+}
+.display2{
+    display: grid;
+    grid-template-columns:  60% 35% ;
+    height: 80%;
+    grid-gap: 5%;
+    
+
+
+}
+
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 20px;
+}
+.operations{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+}
+
+.numbers div , .operations div{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow:  #77777780 0px 0px 4px 1px;
+    cursor: pointer;
+    transition: 0.3s ;
+
+}
+.numbers div:hover , .operations div:hover{
+
+background-color: #c9c9c9;
+
+}
+
+@media (max-width:800px) {
+    body{
+        font-size: 24;
+    }
+
+    .container{
+        width: 90%;
+        height: 70%;
+        
+    }
+    .numbers div , .operations div{
+
+max-height: 60%;
+max-width:  100%;
+padding: 10px;
+
+
+}
+    .operations,.numbers{
+        grid-gap: 10px;
+        align-content: center;
+        justify-content: center;
+    }
+}
+

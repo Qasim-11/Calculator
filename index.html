@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div  id = "display1"class="display1"></div>
+        <div class="display2">
+        <div class="numbers">
+
+
+
+            <div id="number" onclick="Number(7)">7</div>
+            <div id="number" onclick="Number(8)">8</div>
+            <div id="number" onclick="Number(9)">9</div>
+
+
+            <div id="number" onclick="Number(4)">4</div>
+            <div id="number" onclick="Number(5)">5</div>
+            <div id="number" onclick="Number(6)">6</div>
+
+
+            <div id="number" onclick="Number(1)">1</div>
+            <div id="number" onclick="Number(2)">2</div>
+            <div id="number" onclick="Number(3)">3</div>
+
+
+            <div id="number" onclick="Number(0)">0</div>
+            <div id="number" onclick="dot()">.</div>
+            <div id="number" onclick="x10()">×10</div>
+
+
+        </div>
+        <div class="operations">
+            <div onclick="Operation1()">C</div>
+            <div onclick="Operation2()">D</div>
+
+            <div onclick="Operation6()">×</div>
+            <div onclick="Operation5()">÷</div>
+
+            <div onclick="Operation3()">+</div>
+            <div onclick="Operation4()">-</div>
+            
+
+            <div onclick="Operation7()">%</div>
+            <div onclick="Operation8()">=</div>
+        </div>
+
+
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+
+
